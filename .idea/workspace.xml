@@ -4,18 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a20168b9-d1b1-40f6-9f34-f37e3585fe20" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/MainController.java" afterDir="false" />
+    <list default="true" id="a20168b9-d1b1-40f6-9f34-f37e3585fe20" name="Changes" comment="k">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/businessLogic/BlFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/businessLogic/BlFacadeImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/configuration/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/uiControllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/uiControllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/ui/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ehu/eus/db_project/ui/MainGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ehu/eus/db_project/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ehu/eus/db_project/Main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,6 +80,31 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ehu.eus.db_project" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ehu.eus.db_project.ui.HelloApplication" />
+      <module name="DB_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ehu.eus.db_project.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,11 +121,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715158521828</updated>
-      <workItem from="1715158522762" duration="318000" />
+      <workItem from="1715158522762" duration="2862000" />
     </task>
+    <task id="LOCAL-00001" summary="k">
+      <option name="closed" value="true" />
+      <created>1715159487651</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715159487651</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="k" />
+    <option name="LAST_COMMIT_MESSAGE" value="k" />
   </component>
 </project>

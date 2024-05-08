@@ -1,5 +1,8 @@
-package ehu.eus.db_project;
+package ehu.eus.db_project.ui;
 
+import ehu.eus.db_project.businessLogic.BlFacade;
+import ehu.eus.db_project.businessLogic.BlFacadeImplementation;
+import ehu.eus.db_project.configuration.Config;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -7,18 +10,29 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
+import java.util.Locale;
 
-public class HelloApplication extends Application {
-    @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Main.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
-    }
+public class HelloApplication {
 
     public static void main(String[] args) {
+
+        Config config = Config.getInstance();
+
+        Locale.setDefault(new Locale(config.getLocale()));
+        System.out.println("Locale: " + Locale.getDefault());
+
+        BlFacade businessLogic;
+
+        try {
+
+            if (config.isBusinessLogicLocal()) {
+                businessLogic = new BlFacadeImplementation();
+
+            new MainGUI(businessLogic);
+            }
+        } catch (Exception e) {
+            System.err.println("Error in ApplicationLauncher: " + e);
+        }
 
         // Database credentials
         String url = "jdbc:mysql://dif-mysql.ehu.es:23306/DBI20";
@@ -58,6 +72,7 @@ public class HelloApplication extends Application {
             System.out.println("Connection failed! Check output console");
             e.printStackTrace();
         }
-    }
 
+
+    }
 }

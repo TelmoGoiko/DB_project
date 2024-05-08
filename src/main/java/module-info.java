@@ -6,5 +6,8 @@ module ehu.eus.db_project {
     requires java.sql;
 
     opens ehu.eus.db_project to javafx.fxml;
-    exports ehu.eus.db_project;
+    exports ehu.eus.db_project.ui;
+    opens ehu.eus.db_project.ui to javafx.fxml;
+    exports ehu.eus.db_project.uiControllers;
+    opens ehu.eus.db_project.uiControllers to javafx.fxml;
 }
